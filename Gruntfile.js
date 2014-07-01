@@ -30,13 +30,16 @@ module.exports = function(grunt) {
           root: './lib',
           reportFormats: ['lcov'],
           reporter : 'spec',
-          coverageFolder : 'coverage/unit'
+          coverageFolder : 'coverage/unit',
+          require: 'test/s.js',
+          harmony: true
         }
       }
     },
     mochaTest: {
       options: {
-        reporter: 'spec'
+        reporter: 'spec',
+        require: './test/s.js'
       },
       unit : {
         src: ['test/unit/**/*.spec.js']

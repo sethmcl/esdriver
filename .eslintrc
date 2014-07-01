@@ -9,5 +9,10 @@
 
   "env": {
     "node": true
+  },
+
+  "globals": {
+    "Proxy": true,
+    "Promise": true
   }
 }
